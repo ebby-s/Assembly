@@ -23,20 +23,21 @@ clb
 xch r0
 add r8
 xch r8
+jcn c0 main
 tcc
 add r9
 xch r9
+jcn c0 main
 tcc
 add r10
 xch r10
+jcn c0 main
 tcc
 add r11
 xch r11
 jun main
 
 process_tens:
-clb
-xch r1
 dac
 xch r1
 ldm 10
@@ -44,8 +45,6 @@ xch r0
 jun main
 
 process_huns:
-clb
-xch r2
 dac
 xch r2
 ldm 10
@@ -53,8 +52,6 @@ xch r1
 jun main
 
 process_thous:
-clb
-xch r3
 dac
 xch r3
 ldm 10
