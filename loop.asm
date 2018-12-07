@@ -1,8 +1,4 @@
 ldm 15
-xch r1
-
-clb
-ld r1
 
 main:
 ral
